@@ -1,24 +1,17 @@
-# vue-basics
+**_결국엔 Vue를 한다 :(_**
 
-## Project setup
-```
-yarn install
-```
+<br />
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+# 학습 목표
 
-### Compiles and minifies for production
-```
-yarn build
-```
+- [ ] Vue 2 기본 학습
+  - [ ] Class component 복기
+  - [ ] Vue 데코레이터 학습
+- [ ] Vue Router 기본 학습
+- [ ] VueX 기본 학습
 
-### Lints and fixes files
-```
-yarn lint
-```
+<br />
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 특징
+
+- 양방향 바인딩이 가능하다
