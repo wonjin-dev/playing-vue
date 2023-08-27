@@ -5,20 +5,36 @@
 - [x] Vue 2 기본 학습
   - [x] Class component 복기
   - [x] Vue 데코레이터 학습
-- [x] Vue Router 기본 학습
-- [ ] VueX 기본 학습
+- [x] Vue Router 3 기본 학습
+- [ ] VueX 3 기본 학습
 
-## Step
+## Step 설정
 
 <ol>
   <li>using state</li>
   <li>bidirectional binding</li>
   <li>Vue Router</li>
-  <li>API fetch</li>
   <li>VueX</li>
 </ol>
 
-<br>
+## Additional
+
+- [ ] TypeScript
+- [ ] Sass
+- [ ] Life cycle
+
+<br><hr><br>
+
+### 생각해볼 관점
+
+- 양방향 바인딩
+  - 채팅 로직 순서도에 따라 에밋해보기
+    - `v-model` ?
+- 클래스 컴포넌트에서 api 레이어 위임
+  - 기존 패턴인 vuex를 활용한 레포지토리 패턴을 사용할 것인가
+    - 효율적인가? 대체한다면 어떻게
+
+<br><hr><br>
 
 ## Vue Router
 
@@ -33,14 +49,7 @@ new VueRouter({
 
 <br>
 
-### 생각해볼 관점
-
-- 양방향 바인딩
-  - 채팅 로직 순서도에 따라 에밋해보기
-    - `v-model` ?
-- 클래스 컴포넌트에서 api 레이어 위임
-  - 기존 패턴인 vuex를 활용한 레포지토리 패턴을 사용할 것인가
-    - 효율적인가? 대체한다면 어떻게
+## VueX
 
 <br><hr><br>
 
