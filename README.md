@@ -22,6 +22,7 @@
 - [ ] TypeScript
 - [ ] Sass
 - [ ] Life cycle
+- [ ] bootstrap
 
 <br><hr><br>
 
@@ -51,16 +52,26 @@ new VueRouter({
 
 ## VueX
 
+<img width="730" alt="" src="https://github.com/wonjin-dev/playing-vue/assets/82315118/7fd5b3a7-2d88-46e5-a372-9b46a027d5d5" />
+
+- mutation과 action
+
 <br><hr><br>
 
 ### ref
 
-컴포넌트 이벤트
+**_Vue decorator_**
+
+- https://github.com/kaorun343/vue-property-decorator#readme
+- http://ccambo.github.io/Dev/Vue/6.How-to-use-vue-property-decorator
+  > @PropSync, @Watch, @Component, ...
+
+**_컴포넌트 이벤트_**
 
 - https://vuejs.org/guide/components/events.html
   > emit, . . .
 
-이벤트 핸들링
+**_이벤트 핸들링_**
 
 - https://vuejs.org/guide/essentials/event-handling.html#event-modifiers
-  > @, key alias
+  > @, key-alias, ...
