@@ -10,23 +10,38 @@
 		</p>
 
 		<button @click="toggleShowName">
-			<span>{{ isNameShown ? '이름 숨김' : '이름 노출' }}</span>
+			<span>이름 {{ isNameShown ? '숨김' : '노출' }}</span>
 		</button>
+
+		<section class="bidirectional_binding">
+			<EmitInput @emitted="update" />
+			<p>
+				{{ received }}
+			</p>
+		</section>
 	</main>
 </template>
 
 <script>
 import {Vue} from 'vue-property-decorator';
 import {Component} from 'vue-property-decorator';
+import EmitInput from './components/EmitInput.vue';
 
-@Component
+@Component({
+	components: {EmitInput},
+})
 export default class Memo extends Vue {
 	title = 'Hello, World';
 	name = '';
 	isNameShown = false;
+	received = '';
 
 	toggleShowName() {
 		this.isNameShown = !this.isNameShown;
+	}
+
+	update(emitted) {
+		this.received = emitted;
 	}
 
 	beforeMount() {
@@ -45,5 +60,17 @@ h1 {
 .my_name {
 	color: blue;
 	font-weight: 700;
+}
+
+.bidirectional_binding {
+	height: 112.5px;
+	border: 2px solid grey;
+	border-radius: 8px;
+	padding: 16px;
+	margin-top: 16px;
+
+	& > input {
+		margin-top: 8px;
+	}
 }
 </style>

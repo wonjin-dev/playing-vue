@@ -6,7 +6,7 @@
 
 <script>
 import {Component, Vue} from 'vue-property-decorator';
-import Memo from './components/Memo.vue';
+import Memo from './components/Memo';
 
 @Component({
 	components: {Memo},
