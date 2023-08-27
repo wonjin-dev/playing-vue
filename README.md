@@ -5,7 +5,7 @@
 - [x] Vue 2 기본 학습
   - [x] Class component 복기
   - [x] Vue 데코레이터 학습
-- [ ] Vue Router 기본 학습
+- [x] Vue Router 기본 학습
 - [ ] VueX 기본 학습
 
 ## Step
@@ -13,10 +13,25 @@
 <ol>
   <li>using state</li>
   <li>bidirectional binding</li>
+  <li>Vue Router</li>
   <li>API fetch</li>
   <li>VueX</li>
-  <li>Vue Router</li>
 </ol>
+
+<br>
+
+## Vue Router
+
+- remove hash
+
+```
+new VueRouter({
+  mode: 'history',
+  // ...
+})
+```
+
+<br>
 
 ### 생각해볼 관점
 

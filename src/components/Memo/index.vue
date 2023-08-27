@@ -19,6 +19,10 @@
 				{{ received }}
 			</p>
 		</section>
+
+		<router-link to="/test">
+			<button>Router Test</button>
+		</router-link>
 	</main>
 </template>
 
@@ -67,10 +71,6 @@ h1 {
 	border: 2px solid grey;
 	border-radius: 8px;
 	padding: 16px;
-	margin-top: 16px;
-
-	& > input {
-		margin-top: 8px;
-	}
+	margin: 16px 0;
 }
 </style>
