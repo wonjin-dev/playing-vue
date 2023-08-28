@@ -1,7 +1,5 @@
 # 학습 목표
 
-> 세상 처음해보는 Vue2와 클래스형 컴포넌트를 실무 레벨에서 핸들링 하기 위한 기본 학습
-
 - [x] Vue 2 기본 학습
   - [x] Decorator
     - [x] Class component 복기
@@ -17,12 +15,6 @@
   <li>Vue Router</li>
   <li>VueX</li>
 </ol>
-
-## Additional
-
-- [ ] TypeScript
-- [ ] Sass
-- [ ] Life cycle
 
 <br><hr><br>
 
@@ -62,8 +54,6 @@ new VueRouter({
 - Mutation = 동기적 처리, Action = 비동기적 처리도 가능.
   - Action에서는 Mutation으로 commit을 행함으로써 간접적으로 상태를 변경하지만, Action을 호출하기 위한 dispatch 메소드는 Promise를 반환하기 때문에 처리의 순서를 제어하는 것이 가능.
   - Mutation은 State의 변경으로 놓아두고, Action에서 처리를 행하게끔 하는 것이 각 처리의 책임이 명확.
-
-리덕스와 비슷한듯 달라서 굉장히 짜증
 
 <br><hr><br>
 
