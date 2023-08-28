@@ -10,4 +10,4 @@ export const storeOptions = {
 
 const createStore = () => new Vuex.Store(storeOptions);
 
-export default createStore();
+export default createStore;

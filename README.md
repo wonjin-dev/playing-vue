@@ -3,10 +3,11 @@
 > 세상 처음해보는 Vue2와 클래스형 컴포넌트를 실무 레벨에서 핸들링 하기 위한 기본 학습
 
 - [x] Vue 2 기본 학습
-  - [x] Class component 복기
-  - [x] Vue 데코레이터 학습
+  - [x] Decorator
+    - [x] Class component 복기
 - [x] Vue Router 3 기본 학습
-- [ ] VueX 3 기본 학습
+- [x] VueX 3 기본 학습
+  - [x] Decorator
 
 ## Step 설정
 
@@ -22,7 +23,6 @@
 - [ ] TypeScript
 - [ ] Sass
 - [ ] Life cycle
-- [ ] bootstrap
 
 <br><hr><br>
 
@@ -30,7 +30,6 @@
 
 - 양방향 바인딩
   - 채팅 로직 순서도에 따라 에밋해보기
-    - `v-model` ?
 - 클래스 컴포넌트에서 api 레이어 위임
   - 기존 패턴인 vuex를 활용한 레포지토리 패턴을 사용할 것인가
     - 효율적인가? 대체한다면 어떻게
@@ -55,6 +54,16 @@ new VueRouter({
 <img width="730" alt="" src="https://github.com/wonjin-dev/playing-vue/assets/82315118/7fd5b3a7-2d88-46e5-a372-9b46a027d5d5" />
 
 - mutation과 action
+- decorator `@Action`의 `rawError`
+
+  > true = 정의한 에러를 날려주고 아니면 기본 정의에러를 날림.
+  > default 가 false이기 때문에 생략할 시,catch의 error가 포착이 안될 수 있다.
+
+- Mutation = 동기적 처리, Action = 비동기적 처리도 가능.
+  - Action에서는 Mutation으로 commit을 행함으로써 간접적으로 상태를 변경하지만, Action을 호출하기 위한 dispatch 메소드는 Promise를 반환하기 때문에 처리의 순서를 제어하는 것이 가능.
+  - Mutation은 State의 변경으로 놓아두고, Action에서 처리를 행하게끔 하는 것이 각 처리의 책임이 명확.
+
+리덕스와 비슷한듯 달라서 굉장히 짜증
 
 <br><hr><br>
 

@@ -3,9 +3,11 @@ import App from './App.vue';
 import VueRouter from 'vue-router';
 import Memo from './components/Memo/index.vue';
 import Test from './components/Test.vue';
-import store from './store';
+import InitVueX from './store';
+import {initializeStoreModules} from '@/store/modules/index';
 
 Vue.config.productionTip = false;
+Vue.config.devtools = true;
 Vue.use(VueRouter);
 
 const routes = [
@@ -20,6 +22,9 @@ const router = new VueRouter({
 	mode: 'history',
 	routes,
 });
+
+const store = InitVueX();
+initializeStoreModules(store);
 
 new Vue({
 	router,

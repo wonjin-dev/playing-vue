@@ -13,7 +13,7 @@
 			<span>이름 {{ isNameShown ? '숨김' : '노출' }}</span>
 		</button>
 
-		<section class="bidirectional_binding">
+		<section class="content">
 			<EmitInput @emitted="update" />
 			<p>
 				{{ received }}
@@ -23,6 +23,10 @@
 		<router-link to="/test">
 			<button>Router Test</button>
 		</router-link>
+
+		<section class="content">
+			<Count />
+		</section>
 	</main>
 </template>
 
@@ -30,9 +34,10 @@
 import {Vue} from 'vue-property-decorator';
 import {Component} from 'vue-property-decorator';
 import EmitInput from './components/EmitInput.vue';
+import Count from './components/Count.vue';
 
 @Component({
-	components: {EmitInput},
+	components: {EmitInput, Count},
 })
 export default class Memo extends Vue {
 	title = 'Hello, World';
@@ -40,16 +45,16 @@ export default class Memo extends Vue {
 	isNameShown = false;
 	received = '';
 
+	beforeMount() {
+		this.name = 'wonjin';
+	}
+
 	toggleShowName() {
 		this.isNameShown = !this.isNameShown;
 	}
 
 	update(emitted) {
 		this.received = emitted;
-	}
-
-	beforeMount() {
-		this.name = 'wonjin';
 	}
 }
 </script>
@@ -66,7 +71,7 @@ h1 {
 	font-weight: 700;
 }
 
-.bidirectional_binding {
+.content {
 	height: 112.5px;
 	border: 2px solid grey;
 	border-radius: 8px;
